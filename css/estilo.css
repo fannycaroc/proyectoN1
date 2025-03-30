@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+body,nav,header
+{
+	padding: 0px;
+    margin: 0px;
+    /* background-color: blue; */
+}
+#banner{
+    padding: 0px;
+    margin: 0px;
+    height: 120px;
+    background-image: url(../img/banner6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* img{
+    width: 100%;
+    height: 100%;
+} */
+#titulo{
+    color: #ED1C24;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-family: 'Berkshire Swash', cursive;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+}
+#nomNav{
+    font-family: 'Oleo Script', cursive;
+}
+#navegacion{
+    background-color: #f9f3e5;
+    justify-content: center;
+    align-items: center;
+}
+.myButton{
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.5rem, 1.3vw, 1.5rem);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    margin: 0px;
+    /* background-color: #F3E7E5; */
+    padding: 15px;
+    color: #ED1C24;
+}
+.myButton::after,
+.myButton::before{
+    transition: all 0.2s ease-in-out;
+}
+.myButton::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #d00000;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s ease-in-out;
+  }
+.myButton:hover::before {
+    width: 100%;
+}
+  
+.myButton:hover {
+    transform: scale(1.1);
+}
+.menuInferior{
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+  
+footer a:hover i {
+    transform: scale(1.2) rotate(-5deg);
+    color: #198754;
+}
+
+footer ul li a {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #198754;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  footer ul li a:hover {
+    color: #198754;
+    transform: translateX(5px);
+  }
+  
+  footer ul li a:hover::after {
+    width: 100%;
+  }
+
+
+/* Tamaño de imagen en pantallas pequeñas (ej. móviles) */
+@media screen and (max-width: 768px) {
+    .imgMenu {
+      width: 20px;
+    }
+    .carousel-item img {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+/* Tamaño de imagen en pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .imgMenu{
+      width: 40px;
+    }
+    .carousel-item img {
+        height: 600px;
+        object-fit: cover;
+    }
+}
+/* Tamaño normal para pantallas grandes */
+@media screen and (min-width: 1025px) {
+    .imgMenu{
+      width: 60px;
+    }
+    .carousel-item img {
+        height: 900px;
+        object-fit: cover;
+    }
+}
+
+/* CSS Contacto */
+form label {
+    font-weight: 600;
+    color: #145c32;
+  }
+  
+form input,
+form textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+  
+form button:hover {
+    background-color: #0d6efd;
+    transition: all 0.3s ease-in-out;
+}
+.letraContacto{
+    font-family: 'Poppins', sans-serif;
+}
