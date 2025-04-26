@@ -69,6 +69,21 @@ body,nav,header
 .myButton:hover {
     transform: scale(1.1);
 }
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.icons button i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons button:hover i {
+    transform: scale(1.2);
+    color: #198754;
+}
 .menuInferior{
     font-family: 'Poppins', sans-serif;
 }
