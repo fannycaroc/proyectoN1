@@ -1,5 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f8f9fa 0%, #f2f2f2 100%);
+}
+
+.container, .container-fluid, section {
+    background-color: transparent !important;
+}
+
 body,nav,header
 {
 	padding: 0px;
@@ -122,6 +131,48 @@ footer ul li a {
   footer ul li a:hover::after {
     width: 100%;
   }
+
+  /*CSS Frutas y Verduras*/
+  .card-img-top {
+    height: 200px; /* Ajusta según tu gusto */
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  /* Contador de productos en el carrito */
+  .badge-carrito {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transform: translate(50%, -50%);
+    background-color: #dc3545; /* Rojo Bootstrap */
+    color: white;
+    font-size: 0.65rem;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 10;
+} 
+/* Sombra para las tarjetas de productos */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+  /*CSS Frutas y Verduras*/
 
 
 /* Tamaño de imagen en pantallas pequeñas (ej. móviles) */

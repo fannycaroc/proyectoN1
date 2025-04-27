@@ -60,8 +60,21 @@
                         </li>
                     </ul>
                     <div class="icons">
-                        <a href="pages/contacto.html"><button class="myButton"><i class="fa-solid fa-user"></i></button></a>
-                        <a href=""><button class="myButton"><i class="fa-solid fa-cart-shopping"></i></button></a>
+                        <div id="iconoUsuario">
+                            <button class="myButton" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                        </div>
+                        <div id="iconoCarrito" class="position-relative">
+                            <a href="#">
+                              <button class="myButton position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span id="contadorCarrito" class="badge-carrito">
+                                  0
+                                </span>
+                              </button>
+                            </a>
+                        </div>                                                                                                     
                     </div>
                 </div>
             </div>
